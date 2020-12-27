@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SistemaFacturacionPruebaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cajero">
+          <Key>
+            <PropertyRef Name="idCajero_pk" />
+          </Key>
+          <Property Name="idCajero_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idUsuario_fk" Type="int" Nullable="false" />
+          <Property Name="DUIcajero" Type="varchar" MaxLength="12" />
+          <Property Name="nombreCajero" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="idCliente_pk" />
+          </Key>
+          <Property Name="idCliente_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombreCliente" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="DUI" Type="varchar" MaxLength="12" />
+          <Property Name="NIT" Type="varchar" MaxLength="20" />
+          <Property Name="NRC" Type="varchar" MaxLength="17" />
+        </EntityType>
+        <EntityType Name="DetalleFactura">
+          <Key>
+            <PropertyRef Name="idDetalle_pk" />
+          </Key>
+          <Property Name="idDetalle_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idProducto_fk" Type="int" Nullable="false" />
+          <Property Name="numeroFactura_fk" Type="int" Nullable="false" />
+          <Property Name="cantidad" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Factura">
+          <Key>
+            <PropertyRef Name="numeroFactura_pk" />
+          </Key>
+          <Property Name="numeroFactura_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idComprobante_fk" Type="int" Nullable="false" />
+          <Property Name="idMetodoPago_fk" Type="int" Nullable="false" />
+          <Property Name="idCliente_fk" Type="int" Nullable="false" />
+          <Property Name="idCajero_fk" Type="int" Nullable="false" />
+          <Property Name="fecha" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="MetodoPago">
+          <Key>
+            <PropertyRef Name="idMetodoPago_pk" />
+          </Key>
+          <Property Name="idMetodoPago_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tipoMetodo" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="idProducto_pk" />
+          </Key>
+          <Property Name="idProducto_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="100" />
+          <Property Name="nombreProducto" Type="varchar" MaxLength="60" />
+          <Property Name="precioUnitario" Type="float" />
+        </EntityType>
+        <EntityType Name="TipoComprobante">
+          <Key>
+            <PropertyRef Name="idComprobante_pk" />
+          </Key>
+          <Property Name="idComprobante_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombreComprobante" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="idUsuario_pk" />
+          </Key>
+          <Property Name="idUsuario_pk" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="usuario" Type="varchar" MaxLength="30" />
+          <Property Name="contraseña" Type="varchar" MaxLength="30" />
+          <Property Name="tipoUsuario" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="idCliente_fk">
+          <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="idCliente_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idCliente_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idComprobante_fk">
+          <End Role="TipoComprobante" Type="Self.TipoComprobante" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoComprobante">
+              <PropertyRef Name="idComprobante_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idComprobante_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idMetodoPago_fk">
+          <End Role="MetodoPago" Type="Self.MetodoPago" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetodoPago">
+              <PropertyRef Name="idMetodoPago_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idMetodoPago_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idProducto_fk">
+          <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producto">
+              <PropertyRef Name="idProducto_pk" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="idProducto_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idUsuario_fk">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1" />
+          <End Role="Cajero" Type="Self.Cajero" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="idUsuario_pk" />
+            </Principal>
+            <Dependent Role="Cajero">
+              <PropertyRef Name="idUsuario_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idVendedor_fk">
+          <End Role="Cajero" Type="Self.Cajero" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cajero">
+              <PropertyRef Name="idCajero_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idCajero_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="numeroFactura_fk">
+          <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factura">
+              <PropertyRef Name="numeroFactura_pk" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="numeroFactura_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemaFacturacionPruebaModelStoreContainer">
+          <EntitySet Name="Cajero" EntityType="Self.Cajero" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetalleFactura" EntityType="Self.DetalleFactura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MetodoPago" EntityType="Self.MetodoPago" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipoComprobante" EntityType="Self.TipoComprobante" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="idCliente_fk" Association="Self.idCliente_fk">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="idComprobante_fk" Association="Self.idComprobante_fk">
+            <End Role="TipoComprobante" EntitySet="TipoComprobante" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="idMetodoPago_fk" Association="Self.idMetodoPago_fk">
+            <End Role="MetodoPago" EntitySet="MetodoPago" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="idProducto_fk" Association="Self.idProducto_fk">
+            <End Role="Producto" EntitySet="Producto" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="idUsuario_fk" Association="Self.idUsuario_fk">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Cajero" EntitySet="Cajero" />
+          </AssociationSet>
+          <AssociationSet Name="idVendedor_fk" Association="Self.idVendedor_fk">
+            <End Role="Cajero" EntitySet="Cajero" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="numeroFactura_fk" Association="Self.numeroFactura_fk">
+            <End Role="Factura" EntitySet="Factura" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SistemaFacturacionPruebaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cajero">
+          <Key>
+            <PropertyRef Name="idCajero_pk" />
+          </Key>
+          <Property Name="idCajero_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idUsuario_fk" Type="Int32" Nullable="false" />
+          <Property Name="DUIcajero" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nombreCajero" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="idCliente_pk" />
+          </Key>
+          <Property Name="idCliente_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombreCliente" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DUI" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="NIT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NRC" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DetalleFactura">
+          <Key>
+            <PropertyRef Name="idDetalle_pk" />
+          </Key>
+          <Property Name="idDetalle_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idProducto_fk" Type="Int32" Nullable="false" />
+          <Property Name="numeroFactura_fk" Type="Int32" Nullable="false" />
+          <Property Name="cantidad" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Factura">
+          <Key>
+            <PropertyRef Name="numeroFactura_pk" />
+          </Key>
+          <Property Name="numeroFactura_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idComprobante_fk" Type="Int32" Nullable="false" />
+          <Property Name="idMetodoPago_fk" Type="Int32" Nullable="false" />
+          <Property Name="idCliente_fk" Type="Int32" Nullable="false" />
+          <Property Name="idCajero_fk" Type="Int32" Nullable="false" />
+          <Property Name="fecha" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MetodoPago">
+          <Key>
+            <PropertyRef Name="idMetodoPago_pk" />
+          </Key>
+          <Property Name="idMetodoPago_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tipoMetodo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Factura" Relationship="Self.idMetodoPago_fk" FromRole="MetodoPago" ToRole="Factura" />
+        </EntityType>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="idProducto_pk" />
+          </Key>
+          <Property Name="idProducto_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="nombreProducto" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="precioUnitario" Type="Double" />
+        </EntityType>
+        <EntityType Name="TipoComprobante">
+          <Key>
+            <PropertyRef Name="idComprobante_pk" />
+          </Key>
+          <Property Name="idComprobante_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombreComprobante" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="idUsuario_pk" />
+          </Key>
+          <Property Name="idUsuario_pk" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="usuario" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="contraseña" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="tipoUsuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="idUsuario_fk">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1" />
+          <End Role="Cajero" Type="Self.Cajero" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="idUsuario_pk" />
+            </Principal>
+            <Dependent Role="Cajero">
+              <PropertyRef Name="idUsuario_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idVendedor_fk">
+          <End Role="Cajero" Type="Self.Cajero" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cajero">
+              <PropertyRef Name="idCajero_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idCajero_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idCliente_fk">
+          <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="idCliente_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idCliente_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idProducto_fk">
+          <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producto">
+              <PropertyRef Name="idProducto_pk" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="idProducto_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="numeroFactura_fk">
+          <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+          <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factura">
+              <PropertyRef Name="numeroFactura_pk" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="numeroFactura_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idComprobante_fk">
+          <End Role="TipoComprobante" Type="Self.TipoComprobante" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoComprobante">
+              <PropertyRef Name="idComprobante_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idComprobante_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idMetodoPago_fk">
+          <End Role="MetodoPago" Type="Self.MetodoPago" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MetodoPago">
+              <PropertyRef Name="idMetodoPago_pk" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idMetodoPago_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemaFacturacionPruebaEntities7" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cajero" EntityType="Self.Cajero" />
+          <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+          <EntitySet Name="DetalleFactura" EntityType="Self.DetalleFactura" />
+          <EntitySet Name="Factura" EntityType="Self.Factura" />
+          <EntitySet Name="MetodoPago" EntityType="Self.MetodoPago" />
+          <EntitySet Name="Producto" EntityType="Self.Producto" />
+          <EntitySet Name="TipoComprobante" EntityType="Self.TipoComprobante" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+          <AssociationSet Name="idUsuario_fk" Association="Self.idUsuario_fk">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Cajero" EntitySet="Cajero" />
+          </AssociationSet>
+          <AssociationSet Name="idVendedor_fk" Association="Self.idVendedor_fk">
+            <End Role="Cajero" EntitySet="Cajero" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="idCliente_fk" Association="Self.idCliente_fk">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="idProducto_fk" Association="Self.idProducto_fk">
+            <End Role="Producto" EntitySet="Producto" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="numeroFactura_fk" Association="Self.numeroFactura_fk">
+            <End Role="Factura" EntitySet="Factura" />
+            <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+          </AssociationSet>
+          <AssociationSet Name="idComprobante_fk" Association="Self.idComprobante_fk">
+            <End Role="TipoComprobante" EntitySet="TipoComprobante" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="idMetodoPago_fk" Association="Self.idMetodoPago_fk">
+            <End Role="MetodoPago" EntitySet="MetodoPago" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SistemaFacturacionPruebaModelStoreContainer" CdmEntityContainer="SistemaFacturacionPruebaEntities7">
+          <EntitySetMapping Name="Cajero">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Cajero">
+              <MappingFragment StoreEntitySet="Cajero">
+                <ScalarProperty Name="idCajero_pk" ColumnName="idCajero_pk" />
+                <ScalarProperty Name="idUsuario_fk" ColumnName="idUsuario_fk" />
+                <ScalarProperty Name="DUIcajero" ColumnName="DUIcajero" />
+                <ScalarProperty Name="nombreCajero" ColumnName="nombreCajero" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cliente">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Cliente">
+              <MappingFragment StoreEntitySet="Cliente">
+                <ScalarProperty Name="idCliente_pk" ColumnName="idCliente_pk" />
+                <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
+                <ScalarProperty Name="DUI" ColumnName="DUI" />
+                <ScalarProperty Name="NIT" ColumnName="NIT" />
+                <ScalarProperty Name="NRC" ColumnName="NRC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleFactura">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.DetalleFactura">
+              <MappingFragment StoreEntitySet="DetalleFactura">
+                <ScalarProperty Name="idDetalle_pk" ColumnName="idDetalle_pk" />
+                <ScalarProperty Name="idProducto_fk" ColumnName="idProducto_fk" />
+                <ScalarProperty Name="numeroFactura_fk" ColumnName="numeroFactura_fk" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Factura">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Factura">
+              <MappingFragment StoreEntitySet="Factura">
+                <ScalarProperty Name="numeroFactura_pk" ColumnName="numeroFactura_pk" />
+                <ScalarProperty Name="idComprobante_fk" ColumnName="idComprobante_fk" />
+                <ScalarProperty Name="idMetodoPago_fk" ColumnName="idMetodoPago_fk" />
+                <ScalarProperty Name="idCliente_fk" ColumnName="idCliente_fk" />
+                <ScalarProperty Name="idCajero_fk" ColumnName="idCajero_fk" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MetodoPago">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.MetodoPago">
+              <MappingFragment StoreEntitySet="MetodoPago">
+                <ScalarProperty Name="idMetodoPago_pk" ColumnName="idMetodoPago_pk" />
+                <ScalarProperty Name="tipoMetodo" ColumnName="tipoMetodo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Producto">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Producto">
+              <MappingFragment StoreEntitySet="Producto">
+                <ScalarProperty Name="idProducto_pk" ColumnName="idProducto_pk" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="nombreProducto" ColumnName="nombreProducto" />
+                <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoComprobante">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.TipoComprobante">
+              <MappingFragment StoreEntitySet="TipoComprobante">
+                <ScalarProperty Name="idComprobante_pk" ColumnName="idComprobante_pk" />
+                <ScalarProperty Name="nombreComprobante" ColumnName="nombreComprobante" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="idUsuario_pk" ColumnName="idUsuario_pk" />
+                <ScalarProperty Name="usuario" ColumnName="usuario" />
+                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+                <ScalarProperty Name="tipoUsuario" ColumnName="tipoUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

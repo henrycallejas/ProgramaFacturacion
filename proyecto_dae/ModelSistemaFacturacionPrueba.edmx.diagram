@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a521d15b7bc24919800612edba2540d9" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.Cajero" Width="1.5" PointX="3.375" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.Cliente" Width="1.5" PointX="5.125" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.DetalleFactura" Width="1.5" PointX="8.625" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.Factura" Width="1.5" PointX="5.875" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.MetodoPago" Width="1.5" PointX="7" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.Producto" Width="1.5" PointX="8.875" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.TipoComprobante" Width="1.5" PointX="3.625" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaFacturacionPruebaModel.Usuarios" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="SistemaFacturacionPruebaModel.idUsuario_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionPruebaModel.idVendedor_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionPruebaModel.idCliente_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionPruebaModel.idProducto_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionPruebaModel.numeroFactura_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionPruebaModel.idComprobante_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaFacturacionPruebaModel.idMetodoPago_fk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemaFacturacionPruebaModelStoreContainer" CdmEntityContainer="SistemaFacturacionPruebaEntities7">
+    <EntitySetMapping Name="Cajero">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Cajero">
+        <MappingFragment StoreEntitySet="Cajero">
+          <ScalarProperty Name="idCajero_pk" ColumnName="idCajero_pk" />
+          <ScalarProperty Name="idUsuario_fk" ColumnName="idUsuario_fk" />
+          <ScalarProperty Name="DUIcajero" ColumnName="DUIcajero" />
+          <ScalarProperty Name="nombreCajero" ColumnName="nombreCajero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="idCliente_pk" ColumnName="idCliente_pk" />
+          <ScalarProperty Name="nombreCliente" ColumnName="nombreCliente" />
+          <ScalarProperty Name="DUI" ColumnName="DUI" />
+          <ScalarProperty Name="NIT" ColumnName="NIT" />
+          <ScalarProperty Name="NRC" ColumnName="NRC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleFactura">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.DetalleFactura">
+        <MappingFragment StoreEntitySet="DetalleFactura">
+          <ScalarProperty Name="idDetalle_pk" ColumnName="idDetalle_pk" />
+          <ScalarProperty Name="idProducto_fk" ColumnName="idProducto_fk" />
+          <ScalarProperty Name="numeroFactura_fk" ColumnName="numeroFactura_fk" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Factura">
+        <MappingFragment StoreEntitySet="Factura">
+          <ScalarProperty Name="numeroFactura_pk" ColumnName="numeroFactura_pk" />
+          <ScalarProperty Name="idComprobante_fk" ColumnName="idComprobante_fk" />
+          <ScalarProperty Name="idMetodoPago_fk" ColumnName="idMetodoPago_fk" />
+          <ScalarProperty Name="idCliente_fk" ColumnName="idCliente_fk" />
+          <ScalarProperty Name="idCajero_fk" ColumnName="idCajero_fk" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetodoPago">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.MetodoPago">
+        <MappingFragment StoreEntitySet="MetodoPago">
+          <ScalarProperty Name="idMetodoPago_pk" ColumnName="idMetodoPago_pk" />
+          <ScalarProperty Name="tipoMetodo" ColumnName="tipoMetodo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="idProducto_pk" ColumnName="idProducto_pk" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="nombreProducto" ColumnName="nombreProducto" />
+          <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoComprobante">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.TipoComprobante">
+        <MappingFragment StoreEntitySet="TipoComprobante">
+          <ScalarProperty Name="idComprobante_pk" ColumnName="idComprobante_pk" />
+          <ScalarProperty Name="nombreComprobante" ColumnName="nombreComprobante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="SistemaFacturacionPruebaModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="idUsuario_pk" ColumnName="idUsuario_pk" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+          <ScalarProperty Name="tipoUsuario" ColumnName="tipoUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

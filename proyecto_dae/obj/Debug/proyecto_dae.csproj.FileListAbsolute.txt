@@ -1,0 +1,157 @@
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.exe.config
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.exe
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.pdb
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.xml
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.Properties.Resources.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.GenerateResource.cache
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.CopyComplete
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.exe
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.pdb
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmmenu.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.frmlogin.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmclientes.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\stdole.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportes.frmReporteclientes.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmproductos.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.Frmproductosparametrisado.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmusuarios.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.FrmReportesdeusuarios.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.frmcajero.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.frmReportecajero.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CircularProgressBar.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\WinFormAnimation.dll
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CircularProgressBar.xml
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmbienvenidos.resources
+C:\Users\dell\Desktop\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmmenuprincipal.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.exe.config
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.exe
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.pdb
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CircularProgressBar.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\WinFormAnimation.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\stdole.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\CircularProgressBar.xml
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.xml
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csprojAssemblyReference.cache
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.CCF_RPT.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.FacturaRPT.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.ClienteForm.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.FacturacionForm.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.FacturasGeneradas.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmbienvenidos.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.frmcajero.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmclientes.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmmenuprincipal.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmproductos.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmusuarios.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Pruebaa.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.frmlogin.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmmenu.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.Properties.Resources.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.Frmproductosparametrisado.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.frmReportecajero.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportes.frmReporteclientes.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.FrmReportesdeusuarios.resources
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.GenerateResource.cache
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.CoreCompileInputs.cache
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.CopyComplete
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.exe
+C:\Users\Henry\Documents\02- web\proyecto\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.pdb
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.exe.config
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.exe
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\proyecto_dae.pdb
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CircularProgressBar.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\WinFormAnimation.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\stdole.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\CircularProgressBar.xml
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.xml
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.CCF_RPT.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.FacturaRPT.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.ClienteForm.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.FacturacionForm.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.FacturasGeneradas.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.frmacercade.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmbienvenidos.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.frmcajero.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmclientes.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmmenuprincipal.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmproductos.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmusuarios.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Pruebaa.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.frmlogin.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.formularios.Frmmenu.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.Properties.Resources.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.Frmproductosparametrisado.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.frmReportecajero.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportes.frmReporteclientes.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.reportesparametrisado.FrmReportesdeusuarios.resources
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.GenerateResource.cache
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.CoreCompileInputs.cache
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csproj.CopyComplete
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.exe
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.pdb
+C:\Users\Henry\Documents\02- web\proyecto\ESTE\proyecto_dae\proyecto_dae\obj\Debug\proyecto_dae.csprojAssemblyReference.cache

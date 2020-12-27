@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2048D188-FF7C-4482-BCD6-A5A7C118C9B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proyecto_dae</RootNamespace>
+    <AssemblyName>proyecto_dae</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cajero.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CCF_RPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCF_RPT.Designer.cs">
+      <DependentUpon>CCF_RPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleFactura.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Factura.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaRPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaRPT.Designer.cs">
+      <DependentUpon>FacturaRPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\ClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\ClienteForm.Designer.cs">
+      <DependentUpon>ClienteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FacturacionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FacturacionForm.Designer.cs">
+      <DependentUpon>FacturacionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FacturasGeneradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FacturasGeneradas.Designer.cs">
+      <DependentUpon>FacturasGeneradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmacercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmacercade.Designer.cs">
+      <DependentUpon>frmacercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Frmbienvenidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Frmbienvenidos.Designer.cs">
+      <DependentUpon>Frmbienvenidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\frmcajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\frmcajero.Designer.cs">
+      <DependentUpon>frmcajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Frmclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Frmclientes.Designer.cs">
+      <DependentUpon>Frmclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Frmmenuprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Frmmenuprincipal.Designer.cs">
+      <DependentUpon>Frmmenuprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Frmproductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Frmproductos.Designer.cs">
+      <DependentUpon>Frmproductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Frmusuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Frmusuarios.Designer.cs">
+      <DependentUpon>Frmusuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Pruebaa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="formularios\Pruebaa.Designer.cs">
+      <DependentUpon>Pruebaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Frmmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Frmmenu.Designer.cs">
+      <DependentUpon>Frmmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetodoPago.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSistemaFacturacionPrueba.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaFacturacionPrueba.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSistemaFacturacionPrueba.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSistemaFacturacionPrueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaFacturacionPrueba.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportesparametrisado\Frmproductosparametrisado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportesparametrisado\Frmproductosparametrisado.Designer.cs">
+      <DependentUpon>Frmproductosparametrisado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportesparametrisado\frmReportecajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportesparametrisado\frmReportecajero.Designer.cs">
+      <DependentUpon>frmReportecajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportesparametrisado\frmReporteclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportesparametrisado\frmReporteclientes.Designer.cs">
+      <DependentUpon>frmReporteclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportesparametrisado\FrmReportesdeusuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportesparametrisado\FrmReportesdeusuarios.Designer.cs">
+      <DependentUpon>FrmReportesdeusuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportesparametrisado\rptcajerosreporte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptcajerosreporte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportesparametrisado\rptclienteparametrisado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptclienteparametrisado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportesparametrisado\rptreporteproductoparametrisado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptreporteproductoparametrisado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportesparametrisado\rptreporteusuarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptreporteusuarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCCF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCCF.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="rptFactura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFactura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TipoComprobante.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <DependentUpon>ModelSistemaFacturacionPrueba.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CCF_RPT.resx">
+      <DependentUpon>CCF_RPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaRPT.resx">
+      <DependentUpon>FacturaRPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\ClienteForm.resx">
+      <DependentUpon>ClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FacturacionForm.resx">
+      <DependentUpon>FacturacionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FacturasGeneradas.resx">
+      <DependentUpon>FacturasGeneradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmacercade.resx">
+      <DependentUpon>frmacercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Frmbienvenidos.resx">
+      <DependentUpon>Frmbienvenidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\frmcajero.resx">
+      <DependentUpon>frmcajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Frmclientes.resx">
+      <DependentUpon>Frmclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Frmmenuprincipal.resx">
+      <DependentUpon>Frmmenuprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Frmproductos.resx">
+      <DependentUpon>Frmproductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Frmusuarios.resx">
+      <DependentUpon>Frmusuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Pruebaa.resx">
+      <DependentUpon>Pruebaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Frmmenu.resx">
+      <DependentUpon>Frmmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reportesparametrisado\Frmproductosparametrisado.resx">
+      <DependentUpon>Frmproductosparametrisado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesparametrisado\frmReportecajero.resx">
+      <DependentUpon>frmReportecajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesparametrisado\frmReporteclientes.resx">
+      <DependentUpon>frmReporteclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesparametrisado\FrmReportesdeusuarios.resx">
+      <DependentUpon>FrmReportesdeusuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesparametrisado\rptcajerosreporte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptcajerosreporte.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesparametrisado\rptclienteparametrisado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptclienteparametrisado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesparametrisado\rptreporteproductoparametrisado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptreporteproductoparametrisado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportesparametrisado\rptreporteusuarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptreporteusuarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCCF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCCF.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptFactura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFactura.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="ModelSistemaFacturacionPrueba.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelSistemaFacturacionPrueba.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelSistemaFacturacionPrueba.edmx.diagram">
+      <DependentUpon>ModelSistemaFacturacionPrueba.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto_16x16.png" />
+    <None Include="Resources\users_16x16-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen.compra.jpg" />
+    <None Include="Resources\back_24x24-32.gif" />
+    <None Include="Resources\search-add_24x24-32.gif" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\guardar.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\app-edit_32x32-32.gif" />
+    <None Include="Resources\remove_24x24-32.gif" />
+    <None Include="Resources\images.cliente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios.jpg" />
+    <None Include="Resources\imagen miproyecto-con fondo.jpeg" />
+    <None Include="Resources\sin fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_min.png" />
+    <None Include="Resources\fondo_login.jpg" />
+    <None Include="Resources\imagen factura sin fondo.png" />
+    <None Include="Resources\res.png" />
+    <None Include="Resources\minimazar.png" />
+    <None Include="Resources\maxi.png" />
+    <None Include="Resources\cerrar.png" />
+    <None Include="Resources\logoabajo.jpg" />
+    <None Include="Resources\sin fondo1.png" />
+    <None Include="Resources\cajero.jpg" />
+    <None Include="Resources\cajeros11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelSistemaFacturacionPrueba.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSistemaFacturacionPrueba.edmx</DependentUpon>
+      <LastGenOutput>ModelSistemaFacturacionPrueba.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelSistemaFacturacionPrueba.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSistemaFacturacionPrueba.edmx</DependentUpon>
+      <LastGenOutput>ModelSistemaFacturacionPrueba.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
